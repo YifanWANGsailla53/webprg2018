@@ -2,8 +2,8 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/webprg2018/',
-        '/webprg2018/index.html'     
+        '/',
+        '/index.html'     
       ]);
     })
   );
@@ -27,7 +27,7 @@ self.addEventListener('fetch', function(event) {
         });
         return response;
       }).catch(function () {
-        return caches.match('/webprg2018/gallery/myLittleVader.jpg');
+        return caches.match('/gallery/myLittleVader.jpg');
       });
     }
   }));
