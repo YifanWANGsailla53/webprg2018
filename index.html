@@ -4,15 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-
     <title>webprog ilog 2018</title>
     </head>
 
   <body>
-    <h1>hello!</h1>
-
-    <section></section>
-
+    <h2>hello!</h2>
+    <section>
+      <h1>please input the coordinate to memorise:</h1>
+      <form action="form_action.asp" method="get">
+          Longitude: <input type="text" name="longitude" />
+          Latitude: <input type="text" name="latitude" />
+       <input type="submit" value="Submit" />
+      </form>
+    </section>
     <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
