@@ -1,7 +1,7 @@
 function getInput(){
    var longtitude=document.getElementById("longti").value;
    var latitude=document.getElementById("lati").value;
-   console.ingo('longtitude :'+longtitude);
-   console.ingo('latitude :'+latitude);
+   console.info('longtitude :'+longtitude);
+   console.info('latitude :'+latitude);
   }
 getInput();
