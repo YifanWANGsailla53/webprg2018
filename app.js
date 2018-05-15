@@ -4,4 +4,3 @@ function getInput(){
    console.info('longtitude :'+longtitude);
    console.info('latitude :'+latitude);
   }
-getInput();
