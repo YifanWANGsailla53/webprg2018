@@ -18,22 +18,5 @@
       </form>
     </section>
     <script src="app.js"></script>
-    <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-        navigator.serviceWorker.register('sw.js', {scope: '/'})
-            .then(function (registration) {
-
-                // if reg success
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            })
-            .catch(function (err) {
-
-                // if reg fail
-                console.log('ServiceWorker registration failed: ', err);
-            });
-    });
-}
-</script>  
   </body>
 </html>
