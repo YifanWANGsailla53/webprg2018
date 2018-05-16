@@ -17,6 +17,23 @@
        <input type="button" name="button" value="Save" onclick="getInput()" /><br>
       </form>
     </section>
+    <script>
+      if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js', {scope: '/'})
+            .then(function (registration) {
+
+                // if reg success
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(function (err) {
+
+                // if reg fail
+                console.log('ServiceWorker registration failed: ', err);
+            });
+    });
+}
+      </script>
     <script src="app.js"></script>
   </body>
 </html>
