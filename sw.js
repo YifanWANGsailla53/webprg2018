@@ -2,8 +2,9 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html'     
+        '/webprg2018/',
+        '/webprg2018/app.js',
+        '/webprg2018/index.html'     
       ]);
     })
   );
